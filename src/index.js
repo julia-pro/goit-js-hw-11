@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { getData } from './api'
+import { getData } from './api';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
@@ -99,7 +99,7 @@ async function onClick() {
 }
 
 function onError() {
-    Notify.warning('Oops! Something went wrong');
+    Notify.failure('Oops! Something went wrong');
 }
 
 function scrollPage() {
